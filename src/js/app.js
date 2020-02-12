@@ -37,3 +37,10 @@ buttonSelectFile.addEventListener('input', (event) => {
   const files = Array.from(event.currentTarget.files);
   loadFile(files);
 });
+
+blockImg.addEventListener('click', (event) => {
+  if (event.target.className === 'close') {
+    const itemElemnt = event.target.closest('.item-img-div');
+    blockImg.removeChild(itemElemnt);
+  }
+});

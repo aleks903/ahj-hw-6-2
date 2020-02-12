@@ -15,6 +15,7 @@
   align-items: center;
   font-size: 20px;
   color: #808080;
+  cursor: pointer;
 }
 
 #button-select {
